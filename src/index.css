@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,12 +13,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+img{
+  width: 140px;
+  height: 140px;
+}
+
+.container {
+  padding: 0.1px;
+}
 .favButton{
   background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
-  border: none;
-  width: 100%;
+  border: 10px;
+  width: auto;
   cursor: pointer;
+}
+
+.favButton:hover{
+  background-color: rgba(136, 136, 136, 0.5);
 }
 
 h1{
@@ -25,7 +40,7 @@ h1{
 
 nav{
   display: flex;
-  width: 80vw;
+  width: 100%;
   justify-content: flex-start;
   padding: 1rem;
 }
